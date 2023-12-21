@@ -1,0 +1,54 @@
+body {
+    height: 100vh;
+    width: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    background-color: hsl(0, 0%, 94%);
+}
+body .card {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 15px 15px 100px 15px;
+    width: 500px;
+}
+.entries {
+    display: flex;
+    position: relative;
+    margin-bottom: 40px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+}
+form label {
+    color: hsl(0, 1%, 44%);
+    margin-bottom: 10px;
+}
+form input {
+    padding: 15px;
+    border: 2px solid hsl(0, 0%, 86%);
+    outline: none;
+    width: 90px;
+}
+#icon {
+    background-color:  hsl(259, 100%, 65%);
+    border-radius: 50%;
+    padding: 17px;
+    position: absolute;
+    top: 100%;
+}
+hr {
+    border-top: 2px solid hsl(0, 0%, 86%);
+}
+.results p span {
+    color: hsl(259, 100%, 65%);;
+}
+.results p {
+    color: hsl(0, 0%, 8%);
+    font-size: 60px;
+    font-weight: 900;
+    line-height: 0;
+}
