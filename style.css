@@ -1,4 +1,7 @@
-body {
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,800&family=Roboto&display=swap');
+
+  body {
     height: 100vh;
     width: 100vh;
     display: flex;
@@ -6,17 +9,24 @@ body {
     align-items: center;
     margin: auto;
     background-color: hsl(0, 0%, 94%);
+    font-family: 'Poppins', sans-serif;
 }
 body .card {
     background-color: #fff;
     padding: 40px;
     border-radius: 15px 15px 100px 15px;
     width: 500px;
-}
-.entries {
-    display: flex;
     position: relative;
-    margin-bottom: 40px;
+}
+
+.entries   {
+    display: inline-flex;
+    margin-bottom: 20px;
+    max-width: 700px;
+}
+.entries  {
+    margin-top: 0;
+    display: flex;
 }
 form {
     display: flex;
@@ -25,25 +35,49 @@ form {
 }
 form label {
     color: hsl(0, 1%, 44%);
-    margin-bottom: 10px;
+    margin-bottom: 5px;
+    font-size: 10px;
 }
 form input {
     padding: 15px;
     border: 2px solid hsl(0, 0%, 86%);
+    border-radius: 5px;
     outline: none;
     width: 90px;
+    color:  hsl(0, 0%, 8%);;
+    font-size: 15px;
+    font-weight: 800;
+}
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+  }
+::placeholder {
+    font-weight: 900;
+    font-size: 15px;
+}
+button {
+    padding-top: 0%;
+}
+hr {
+    width: 100%;
+}
+button {
+    border: none;
+    background-color: #fff;
 }
 #icon {
     background-color:  hsl(259, 100%, 65%);
     border-radius: 50%;
-    padding: 17px;
+    padding: 15px;
     position: absolute;
-    top: 100%;
+    bottom: 56% ;
+    right: 6%;
 }
 hr {
     border-top: 2px solid hsl(0, 0%, 86%);
 }
 .results p span {
+    padding-right: 10px;
     color: hsl(259, 100%, 65%);;
 }
 .results p {

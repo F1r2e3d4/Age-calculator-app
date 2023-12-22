@@ -18,28 +18,33 @@
 <body>
   <div class="card">
 <div class="entries">
-  <div>
+  
+    <div>
     <form>
       <label for="day">DAY</label>
       <input type="number" name="day" id="days" placeholder="DD">
     </form>
+    <p id="warning-days"></p>
   </div>
   <div>
     <form >
       <label for="Month">MONTH</label>
       <input type="number" name="Month" id="months" placeholder="MM">
     </form>
+    <p id="warning-months"></p>
   </div>
   <div>
     <form >
       <label for="Year">YEAR</label>
       <input type="number" name="Year" id="years" placeholder="YYYY">
     </form>
+    <p id="warning-years"></p>
   </div>
-  <div>
+  <div class="submit">
+    <button type="submit" id="submit">
   <img id="icon" src="./assets/images/icon-arrow.svg" alt="icon-arrow">
-  </div>
-
+  </button> 
+    </div>
 </div>
 <hr>
 <div class="results">
@@ -52,5 +57,6 @@
     Coded by <a href="#">Your Name Here</a>.
   </div> -->
   </div>
+  <script src="main.js"></script>
 </body>
 </html>
