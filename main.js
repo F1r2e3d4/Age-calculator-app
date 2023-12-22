@@ -15,7 +15,8 @@ const yearoutput = document.getElementById('year-output');
 const daywarning = document.getElementById('warning-days');
 const monthwarning = document.getElementById('warning-months');
 const yearwarning = document.getElementById('warning-years');
-
+const inputwarning = document.querySelectorAll('input');
+console.log(inputwarning[0]);
 daywarning.style.color = 'red';
 daywarning.style.fontSize = '9px';
 monthwarning.style.color = 'red';
