@@ -111,9 +111,9 @@ submitbutton.addEventListener('click', () => {
     daysinput.value = "";
     monthinput.value = "";
     yearinput.value = "";
-    dayoutput.innerHTML = "";
-    monthoutput.innerHTML = "";
-    yearoutput.innerHTML = "";
+    dayoutput.innerHTML = "--";
+    monthoutput.innerHTML = "--";
+    yearoutput.innerHTML = "--";
   } else {
     getyear();
     getmonth();
