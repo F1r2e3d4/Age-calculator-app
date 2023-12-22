@@ -100,10 +100,23 @@ function getday(){
     dayoutput.innerHTML= Math.abs(daysinput.value - day);
     return
 }
-submitbutton.addEventListener('click', emptyinput);
-submitbutton.addEventListener('click', dayemptyinput);
-submitbutton.addEventListener('click', monthemptyinput);
-submitbutton.addEventListener('click', yearemptyinput);
-submitbutton.addEventListener('click', getyear);
-submitbutton.addEventListener('click', getmonth);
-submitbutton.addEventListener('click', getday);
+submitbutton.addEventListener('click', () => {
+  emptyinput();
+  dayemptyinput();
+  monthemptyinput();
+  yearemptyinput();
+  if (daysinput.value === "" || monthinput.value === "" || yearinput.value === "" ||
+      daysinput.value > 31 || monthinput.value > 12 || yearinput.value > year) {
+    // Reset input fields and output areas:
+    daysinput.value = "";
+    monthinput.value = "";
+    yearinput.value = "";
+    dayoutput.innerHTML = "";
+    monthoutput.innerHTML = "";
+    yearoutput.innerHTML = "";
+  } else {
+    getyear();
+    getmonth();
+    getday();
+  }
+});
