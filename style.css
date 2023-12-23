@@ -87,7 +87,7 @@ hr {
 }
 @media screen and (max-width:570px){
 .card {
-max-width: 350px;
+max-width: 330px;
 padding:10px;
 
 }
