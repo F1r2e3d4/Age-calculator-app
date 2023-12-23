@@ -95,6 +95,7 @@ form input {
 display: flex;
 flex-direction: column;
 width: 80px;
+margin-right:10px;
 }
     #icon {
     right: 40%;
