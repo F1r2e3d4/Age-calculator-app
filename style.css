@@ -94,7 +94,7 @@ padding:10px;
 form input {
 display: flex;
 flex-direction: column;
-max-width: 400px;
+width:20%;
 }
     #icon {
     right: 40%;
