@@ -16,7 +16,7 @@ const daywarning = document.getElementById('warning-days');
 const monthwarning = document.getElementById('warning-months');
 const yearwarning = document.getElementById('warning-years');
 const inputwarning = document.querySelectorAll('input');
-console.log(inputwarning[0]);
+console.log(day);
 daywarning.style.color = 'red';
 daywarning.style.fontSize = '9px';
 monthwarning.style.color = 'red';
@@ -98,6 +98,7 @@ function getday(){
     }else if(yearinput.value === "" || daysinput.value > 31){
     return
     }
+    // for(k = ;)?
     dayoutput.innerHTML= Math.abs(daysinput.value - day);
     return
 }
