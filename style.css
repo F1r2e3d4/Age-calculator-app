@@ -94,10 +94,12 @@ padding:10px;
 form input {
 display: flex;
 flex-direction: column;
-width:50%;
+width:100%;
 }
     #icon {
     right: 40%;
     }
-    
+results p span{
+padding=1px;
+}  
 }
