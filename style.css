@@ -10,7 +10,7 @@
     background-color: hsl(0, 0%, 94%);
     font-family: 'Poppins', sans-serif;
 }
-body .card {
+.card {
     background-color: #fff;
     padding: 40px;
     border-radius: 15px 15px 100px 15px;
@@ -92,7 +92,7 @@ hr {
 @media screen and (max-width:570px){
 .card {
 max-width: 320px;
-padding:10px;
+padding:30px;
 
 }
 form input {
